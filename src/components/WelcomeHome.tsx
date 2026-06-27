@@ -145,7 +145,7 @@ export default function WelcomeHome() {
         <div className="w-full max-w-5xl mt-24 mb-12 relative z-10">
           <div className="text-center mb-12">
             <h2 className="text-xl md:text-2xl font-extrabold uppercase tracking-widest text-white">
-              Como funciona o monitoramento?
+              Como funciona o monitoramento? 
             </h2>
             <div className="h-[2px] w-12 bg-gradient-to-r from-[#a855f7] to-[#06b6d4] mx-auto mt-3" />
             <p className="text-xs text-neutral-400 mt-2 font-mono">Simples, direto e sem complicações técnicas</p>
