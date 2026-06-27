@@ -29,13 +29,13 @@ export default function WelcomeHome() {
         </div>
         <div className="flex items-center gap-4">
           <Link 
-            href="/login?tab=login" 
+            href={"/login?tab=login" as any} 
             className="text-xs font-bold uppercase tracking-wider text-neutral-400 hover:text-white transition-colors duration-200"
           >
             Entrar
           </Link>
           <Link 
-            href="/login?tab=register" 
+            href={"/login?tab=register" as any} 
             className="bg-white/5 hover:bg-[#a855f7]/10 text-white hover:text-[#a855f7] text-xs font-bold tracking-wider uppercase py-2.5 px-5 rounded-xl border border-white/10 hover:border-[#a855f7]/30 transition-all duration-300 flex items-center gap-1.5 shadow-md active:scale-95"
           >
             <span>Criar Conta</span>
@@ -65,13 +65,13 @@ export default function WelcomeHome() {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 mt-10 w-full justify-center max-w-sm animate-fade-in">
           <Link
-            href="/login?tab=register"
+            href={"/login?tab=register" as any}
             className="flex-1 bg-[#a855f7] hover:bg-[#9333ea] text-white font-extrabold text-xs tracking-widest uppercase py-4 px-6 rounded-2xl border border-transparent shadow-[0_0_30px_rgba(168,85,247,0.2)] hover:shadow-[0_0_40px_rgba(168,85,247,0.3)] transition-all duration-300 flex items-center justify-center text-center active:scale-95"
           >
             Cadastrar Minha Empresa
           </Link>
           <Link
-            href="/login?tab=login"
+            href={"/login?tab=login" as any}
             className="flex-1 bg-white/5 hover:bg-white/10 text-white font-extrabold text-xs tracking-widest uppercase py-4 px-6 rounded-2xl border border-white/10 hover:border-white/20 transition-all duration-300 flex items-center justify-center text-center active:scale-95"
           >
             Acessar Painel
