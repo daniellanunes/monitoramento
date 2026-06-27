@@ -8,8 +8,10 @@ export default function WelcomeHome() {
   return (
     <div className="w-full h-full overflow-y-auto bg-[#050505] text-slate-100 font-sans custom-scrollbar relative">
       {/* Background glow effects */}
-      <div className="absolute top-0 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[40vw] h-[40vw] max-w-[500px] bg-[rgba(168,85,247,0.05)] blur-[140px] rounded-full pointer-events-none" />
-      <div className="absolute bottom-0 right-1/4 translate-x-1/2 translate-y-1/2 w-[45vw] h-[45vw] max-w-[600px] bg-[rgba(6,182,212,0.03)] blur-[160px] rounded-full pointer-events-none" />
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div className="absolute top-0 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[40vw] h-[40vw] max-w-[500px] bg-[rgba(168,85,247,0.05)] blur-[140px] rounded-full" />
+        <div className="absolute bottom-0 right-1/4 translate-x-1/2 translate-y-1/2 w-[45vw] h-[45vw] max-w-[600px] bg-[rgba(6,182,212,0.03)] blur-[160px] rounded-full" />
+      </div>
 
       {/* Header / Navbar */}
       <header className="w-full max-w-7xl mx-auto px-6 h-20 flex justify-between items-center border-b border-white/5 relative z-10">
