@@ -421,7 +421,7 @@ export default function BrainContainer() {
 
       {/* Logo Centralizado */}
       <div className="absolute flex flex-col items-center top-8 left-1/2 -translate-x-1/2 z-10 pointer-events-none select-none">
-        <img src="/images/sentry_logo.png" alt="Logo NVGO" className="w-50 h-auto object-contain" />
+        <img src="/images/sentry_logo.png" alt="Sentry Logo" className="w-50 h-auto object-contain" />
         <div className="absolute flex flex-row items-center top-12 left-1/2 -translate-x-1/2 z-10 pointer-events-none select-none gap-1">
             <span className={`w-1.5 h-1.5 rounded-full ${syncing ? 'bg-amber-400 animate-ping' : 'bg-[#a855f7]'}`} />
             <span className={`text-[8px] font-mono uppercase tracking-wider ${syncing ? 'text-amber-400' : 'text-[#a855f7]'}`}>

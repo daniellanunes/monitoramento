@@ -14,19 +14,17 @@ export default function WelcomeHome() {
       {/* Header / Navbar */}
       <header className="w-full max-w-7xl mx-auto px-6 h-20 flex justify-between items-center border-b border-white/5 relative z-10">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-[#a855f7]/5 border border-[#a855f7]/15 flex items-center justify-center text-[#a855f7] shadow-[0_0_15px_rgba(168,85,247,0.1)]">
-            <Activity size={18} className="animate-pulse" />
-          </div>
           <div>
-            <h1 className="text-sm font-black tracking-widest text-white uppercase font-sans">
-              SENTRY 3D
-            </h1>
-            <p className="text-[9px] text-[#a855f7] font-mono tracking-widest uppercase">
-              Monitoramento 3D
+            <img src="/images/sentry_logo.png" alt="Sentry Logo" className="w-35 h-auto object-contain" />
+          </div>
+        </div>
+        <div className="flex items-center gap-3">
+          <div>
+            <p className="text-[12px] text-[#a855f7] font-mono tracking-widest uppercase">
+              Monitoramento Avançado de Sites e Servidores
             </p>
           </div>
         </div>
-
         <div className="flex items-center gap-4">
           <Link 
             href="/login?tab=login" 
@@ -48,10 +46,6 @@ export default function WelcomeHome() {
       <main className="w-full max-w-7xl mx-auto px-6 pt-16 pb-24 relative z-10 flex flex-col items-center">
         
         {/* Decorative Badge */}
-        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#a855f7]/5 border border-[#a855f7]/15 text-[10px] font-mono text-[#a855f7] uppercase tracking-wider mb-8">
-          <Sparkles size={11} className="text-[#a855f7] animate-pulse" />
-          <span>Monitoramento Avançado de Sites e Servidores</span>
-        </div>
 
         {/* Hero Headlines */}
         <div className="text-center max-w-3xl flex flex-col items-center">
@@ -85,18 +79,7 @@ export default function WelcomeHome() {
         {/* Mockup / Feature Showcase */}
         <div className="w-full max-w-5xl mt-20 relative rounded-3xl overflow-hidden border border-white/5 bg-white/[0.01] backdrop-blur-sm p-4 md:p-6 shadow-2xl">
           <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-[1] pointer-events-none" />
-          
-          {/* Top Bar Decoration */}
-          <div className="flex justify-between items-center mb-4 border-b border-white/5 pb-4">
-            <div className="flex gap-1.5">
-              <span className="w-3 h-3 rounded-full bg-red-500/20 border border-red-500/30" />
-              <span className="w-3 h-3 rounded-full bg-amber-500/20 border border-amber-500/30" />
-              <span className="w-3 h-3 rounded-full bg-[#a855f7]/20 border border-[#a855f7]/30" />
-            </div>
-            <div className="text-[10px] font-mono text-neutral-500 uppercase tracking-widest bg-white/5 border border-white/10 px-3 py-1 rounded-lg">
-              sentry-3d-neural-mesh.cfg
-            </div>
-          </div>
+         
 
           {/* Core Features Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10 mt-2">
