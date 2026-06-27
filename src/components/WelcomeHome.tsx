@@ -141,6 +141,71 @@ export default function WelcomeHome() {
           </div>
         </div>
 
+        {/* How It Works Section */}
+        <div className="w-full max-w-5xl mt-24 mb-12 relative z-10">
+          <div className="text-center mb-12">
+            <h2 className="text-xl md:text-2xl font-extrabold uppercase tracking-widest text-white">
+              Como funciona o monitoramento?
+            </h2>
+            <div className="h-[2px] w-12 bg-gradient-to-r from-[#a855f7] to-[#06b6d4] mx-auto mt-3" />
+            <p className="text-xs text-neutral-400 mt-2 font-mono">Simples, direto e sem complicações técnicas</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Step 1 */}
+            <div className="p-6 rounded-2xl border border-white/5 bg-[#0a0a0a]/30 backdrop-blur-sm flex gap-4 items-start hover:border-[#a855f7]/20 transition-colors duration-300">
+              <div className="w-8 h-8 rounded-lg bg-[#a855f7]/10 border border-[#a855f7]/20 flex items-center justify-center text-[#a855f7] shrink-0 font-mono text-xs font-bold">
+                01
+              </div>
+              <div>
+                <h4 className="text-xs font-bold text-white uppercase tracking-wider font-mono">Teste de Acesso (No Ar)</h4>
+                <p className="text-[11px] text-neutral-400 mt-2 leading-relaxed">
+                  O monitor visita o site de tempos em tempos simulando um usuário. Se o site responde rápido, fica verde. Se falhar ou demorar demais, o sistema acusa que está fora do ar.
+                </p>
+              </div>
+            </div>
+
+            {/* Step 2 */}
+            <div className="p-6 rounded-2xl border border-white/5 bg-[#0a0a0a]/30 backdrop-blur-sm flex gap-4 items-start hover:border-[#a855f7]/20 transition-colors duration-300">
+              <div className="w-8 h-8 rounded-lg bg-[#a855f7]/10 border border-[#a855f7]/20 flex items-center justify-center text-[#a855f7] shrink-0 font-mono text-xs font-bold">
+                02
+              </div>
+              <div>
+                <h4 className="text-xs font-bold text-white uppercase tracking-wider font-mono">Medição de Velocidade</h4>
+                <p className="text-[11px] text-neutral-400 mt-2 leading-relaxed">
+                  Calculamos o tempo exato (em frações de segundo) que o servidor leva para dar um sinal de vida. Isso ajuda a identificar quando seu site está lento antes mesmo que seus clientes percebam.
+                </p>
+              </div>
+            </div>
+
+            {/* Step 3 */}
+            <div className="p-6 rounded-2xl border border-white/5 bg-[#0a0a0a]/30 backdrop-blur-sm flex gap-4 items-start hover:border-[#a855f7]/20 transition-colors duration-300">
+              <div className="w-8 h-8 rounded-lg bg-[#a855f7]/10 border border-[#a855f7]/20 flex items-center justify-center text-[#a855f7] shrink-0 font-mono text-xs font-bold">
+                03
+              </div>
+              <div>
+                <h4 className="text-xs font-bold text-white uppercase tracking-wider font-mono">Vencimento de Endereço</h4>
+                <p className="text-[11px] text-neutral-400 mt-2 leading-relaxed">
+                  Consultamos o registro oficial da internet para saber quando o nome do seu site (o domínio) vai vencer. Uma contagem regressiva avisa com antecedência para você não perder o prazo de pagamento.
+                </p>
+              </div>
+            </div>
+
+            {/* Step 4 */}
+            <div className="p-6 rounded-2xl border border-white/5 bg-[#0a0a0a]/30 backdrop-blur-sm flex gap-4 items-start hover:border-[#a855f7]/20 transition-colors duration-300">
+              <div className="w-8 h-8 rounded-lg bg-[#a855f7]/10 border border-[#a855f7]/20 flex items-center justify-center text-[#a855f7] shrink-0 font-mono text-xs font-bold">
+                04
+              </div>
+              <div>
+                <h4 className="text-xs font-bold text-white uppercase tracking-wider font-mono">Visitantes ao Vivo</h4>
+                <p className="text-[11px] text-neutral-400 mt-2 leading-relaxed">
+                  Nos conectamos com o painel de tráfego do próprio Google para exibir em tempo real a quantidade de pessoas que estão navegando nas suas páginas naquele exato momento.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </main>
 
       {/* Footer */}
